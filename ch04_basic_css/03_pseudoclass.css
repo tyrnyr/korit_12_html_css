@@ -1,0 +1,53 @@
+/* 클래스 선택자의 하위 li 태그 */
+.outer li {
+    color: olivedrab;
+}
+/* 자식(1촌 자손) 결합자 */
+.outer > li {
+    color: dodgerblue
+}
+.outer > li li {
+    text-decoration: underline;
+}
+.outer > li > ul {
+    text-decoration: underline;
+}
+/* 9-11라인의 결과와 12-14라인의 결과가 다른 지점이 발생합니다.
+ 이상의 경우 잘 생각해보시면 .outer > li보다
+ .outer > li li가 더 구체적이죠. 더 구체적인것이 적용되는 순서 중
+ '상속받는 속성만' 전달이 됩니다.  */
+
+ /* 뒤따르는 모든 동생들 결합자 */
+ .starter ~ li {
+    font-style: italic;
+ }
+
+ /* 뒤따르는 바로 다음 동생 결합자 */
+ .starter + li {
+    font-weight: bold;
+ }
+
+ /* 첫번째, 마지막 요소 가상 클래스 */
+ ol li:first-child, ol li:last-child {
+    color:yellowgreen;
+ }
+ /* ~가 아닌 요소 가상 클래스 */
+ .outer > li:not(:last-child) {
+    text-decoration: line-through;
+ }
+
+ ul:not(.outer) li {
+    font-weight: bold;
+ }
+
+ /* ~ 번째 요소 가상 클래스 */
+ ol li:nth-child(4) {
+    font-weight: bold;
+    color: deeppink;
+ }
+
+ /* 마우스 오버 가상 클래스 */
+ li:hover {
+    font-weight: bold;
+    color: blue;
+ }
