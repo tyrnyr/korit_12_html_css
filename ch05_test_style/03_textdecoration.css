@@ -1,0 +1,12 @@
+p {
+  text-decoration: rgb(49, 163, 74) wavy overline 2px;
+  /* 
+    각 속성값의 순서가 바뀌는것은 상관없음
+    blue wavy underline 3px; 등도 상관없습니다.
+  */
+
+  text-transform: capitalize;
+  text-transform: none;
+  text-transform: uppercase;
+  text-transform: lowercase;
+}

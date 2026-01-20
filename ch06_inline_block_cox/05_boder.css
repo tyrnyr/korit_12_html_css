@@ -1,0 +1,26 @@
+/* li:not(:last-child) {
+  text-decoration: underline;
+}
+
+li:not(:first-child) {
+  text-decoration: overline;
+} */
+
+/* 
+  이렇게 썼을 때는 텍스트 자체에 걸리네요. 그런데 li 요소는 block이잖아요?
+
+  그래서 ul리스트 1이 아니라 그 줄 전체에 밑줄 / 윗줄을 그어보도록 하겠습니다.
+*/
+li:first-child {
+  border-top: 2px solid black;
+}
+
+li:not(:last-child) {
+  text-align: center;
+  width: 80px;
+  padding: auto;
+  /* margin: 0 auto; */
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}

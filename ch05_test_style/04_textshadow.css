@@ -1,0 +1,16 @@
+p {
+  text-shadow:
+  /* 여기서 중요한건 쉼표 쓰면 사라지니까 하나씩 체크할 것 */
+  1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+  1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white,
+
+  /* 바깥쪽 자주색 그림자 : 왜 얘는 두배로 코드를 작성해야하는가를 고민할 필요 */
+  2px 0 plum, -2px 0 plum, 0 2px plum, 0 -2px plum,
+  2px 1px plum, -2px 1px plum, 1px 2px plum, 1px -2px plum,
+  2px -1px plum, -2px -1px plum, -1px 2px plum, -1px -2px plum,
+  2px 2px plum, 2px -2px plum, -2px 2px plum, -2px -2px plum;
+}
+/* 
+  1. 먼저 검은색 택스트에 흰색 그림자를 1px씩 둘러쌌습니다. 상하좌우 + 대각선
+  2. 상하좌우 대각선을 2px씩 해야 흰색 바깥쪽에 둘러쌌기 때문에 총 16개의 CSS 코드라인이 나왔습니다.
+*/

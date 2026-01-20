@@ -1,0 +1,15 @@
+.style {
+  text-decoration: line-through 1px;
+}
+/* ol > li:last-child {
+  text-decoration: line-through 1px;
+} */
+ol > li:nth-child(4) {
+  text-decoration: line-through 1px;
+}
+/* 
+  밑에것도 가능하긴한데 우선순위가 밀려서 확인하고 싶으면 주석 처리하셔야합니다.
+ */
+ #movie {
+  text-decoration: line-through 1px;
+}

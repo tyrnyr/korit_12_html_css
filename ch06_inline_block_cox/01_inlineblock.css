@@ -1,0 +1,18 @@
+ul > li {
+  margin-right: 2em;
+  /* padding-right: 2em; */
+  display: inline-block;
+  font-size: smaller;
+  background-color: blue;
+  width : 65px;
+  color: white;
+}
+ul > div > ul li {
+  margin-right: 2em;
+  /* padding-right: 2em; */
+  display: inline-block;
+  font-size: smaller;
+  background-color: red;
+  width : 65px;
+  font-style: italic;
+}

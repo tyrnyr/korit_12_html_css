@@ -1,0 +1,9 @@
+div {
+  background-color: darkcyan;
+  text-align: center;
+  height: 100vh;
+  line-height: 100vh;
+  /* 
+    height와 line-height를 동일한 값을 주게 되면 '텍스트가 한줄일경우 중간에 위치시킬 수 있습니다.
+  */
+}
