@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background: linear-gradient(gold, tomato);
+  }
+  div.skyblue {
+    background: linear-gradient(45deg, skyblue, blue);
+  }
+  div.deeppink {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(90deg, deeppink, 30%, indigo);
+  }
+  .three {    
+    background: linear-gradient(90deg, deeppink 33%, indigo 50%, white 67%);
+  }
+  .transparent {    
+    background:
+    linear-gradient(217deg, red, transparent 70%),
+    linear-gradient(127deg, lime, transparent 70%),
+    linear-gradient(336deg, blue, transparent 70%);
+  }
+</style>
+<body bgcolor="5f5f5f">
+  <h1>03_divgradient.html</h1>
+  <div class="gold"></div>
+  <br>
+  <div class="skyblue"></div>
+  <!-- class deeppink를 만든다음에 가로 방향으로 deeppink -> indigo로 그라데이션 적용. 크기 400px 400px로 하시오 -->
+   <br>
+   <div class="deeppink"></div>
+   <br>
+   <div class="three"></div>
+   <div class="transparent"></div>
+</body>
+</html>
