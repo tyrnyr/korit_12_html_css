@@ -1,0 +1,27 @@
+/* 
+태그명으로 css 지정 시 얘가 정확하게 어디에 위치하는지 모른다
+article {}
+article aside {}
+article aside figure {}
+article div header {}
+article ul li {}
+article div li.special {} */
+
+/* 
+대안으로 사용하는 클래스를 이용한 명명법으로 css 작성
+.card {}
+.card .thumb {}
+.card .thumb .image {}
+.card .body .title {}
+.card .body .list {}
+.card .body .list .list-item {}
+.card .body .list .list-item.special {} */
+
+.card {}
+.card__thumb {}
+.card__image {}
+.card__body {}
+.card__title {}
+.card__list {}
+.card__list-item {}
+.card__list-item--special {}
